@@ -1,0 +1,58 @@
+#include<stdio.h>
+void main()
+{
+int i,n,x,c=0,time=0;
+time=time+2;
+printf("Enter the size of array=");
+time++;
+scanf("%d",&n);
+time++;
+int a[n];
+printf("Enter the array elements:");
+time++;
+time++;
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+time++;
+time++;
+}
+printf("Enter the element to be searched=");
+time++;
+scanf("%d",&x);
+time++;
+printf("\n");
+time++;
+time++;
+for(i=0;i<n;i++)
+{
+time++;
+if(a[i]==x)
+{
+c++;
+time+2;
+printf("The element is found at %d ",i+1);
+printf("\n");
+}
+time++;
+}
+printf("\n");
+time++;
+time++;
+if(c>0)
+{
+printf("The element is found %d times",c);
+time++;
+}
+else
+{
+printf("The element is not found");
+time++;
+}
+printf("\n");
+
+time+4;
+printf("The time complexity=%d",time);
+printf("\n");
+printf("The space complexity=%d",(20+n*4));
+}
